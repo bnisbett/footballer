@@ -1,0 +1,9 @@
+<h1>{{ model.name }}</h1>
+
+<h2>Squad:</h2>
+
+<ul>
+  {{#each model.players as |player|}}
+    <li>{{player.name}}</li>
+  {{/each}}
+</ul>

@@ -1,0 +1,12 @@
+{{outlet}}
+
+<h1>League</h1>
+
+<h2>{{ model.caption }}</h2>
+
+<h1>Fixtures:</h1>
+<ul>
+  {{#each model.fixtures as |fixture|}}
+    <li>{{fixture.homeTeam.name}} vs {{fixture.awayTeam.name}}</li>
+  {{/each}}
+</ul>

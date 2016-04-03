@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('team', { path: '/team/:team_id' });
+  this.route('player');
+  this.route('fixture', { path: '/fixture/:fixture_id' });
+  this.route('soccerseason', {path: '/soccerseason/:soccerseason_id' });
 });
 
 export default Router;
