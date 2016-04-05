@@ -8,5 +8,6 @@ export default DS.Model.extend({
   numberOfMatchDays: DS.attr(),
   numberOfTeams: DS.attr(),
   numberOfGames: DS.attr(),
-  fixtures: DS.hasMany('fixture')
+  fixtures: DS.hasMany('fixture'),
+  teams: DS.hasMany('team')
 });

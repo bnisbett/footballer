@@ -4,9 +4,9 @@
 
 <h2>{{ model.caption }}</h2>
 
-<h1>Fixtures:</h1>
+<h1>Teams:</h1>
 <ul>
-  {{#each model.fixtures as |fixture|}}
-    <li>{{fixture.homeTeam.name}} vs {{fixture.awayTeam.name}}</li>
+  {{#each model.teams as |team|}}
+    <li>{{team.name}}</li>
   {{/each}}
 </ul>

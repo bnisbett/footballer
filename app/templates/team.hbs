@@ -7,3 +7,11 @@
     <li>{{player.name}}</li>
   {{/each}}
 </ul>
+
+<h2>Fixtures:</h2>
+
+<ul>
+  {{#each model.fixtures as |fixture|}}
+  <li>{{fixture.homeTeam.name}} vs {{fixture.awayTeam.name}}</li>
+  {{/each}}
+</ul>

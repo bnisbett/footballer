@@ -16,6 +16,11 @@ export default DS.JSONAPISerializer.extend({
           numberOfGames: payload.numberOfGames
         },
         relationships: {
+          teams: {
+            links: {
+              related: `http://api.football-data.org/v1/soccerseasons/${payload.id}/teams`
+            }
+          },
           fixtures: {
             links: {
               related: `http://api.football-data.org/v1/soccerseasons/${payload.id}/fixtures`

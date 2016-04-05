@@ -6,5 +6,6 @@ export default DS.Model.extend({
   code: DS.attr(),
   squadMarketValue: DS.attr(),
   crestUrl: DS.attr(),
-  players: DS.hasMany('player')
+  players: DS.hasMany('player'),
+  fixtures: DS.hasMany('fixture')
 });

@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.JSONAPISerializer.extend({
   normalizeSingleResponse(store, type, payload) {
     return {
-      data: this._normalizePlayer(payload.players, type.modelName)
+      data: this._normalizePlayer(payload, type.modelName)
     }
   },
 
