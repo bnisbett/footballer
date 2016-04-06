@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('player');
   this.route('fixture', { path: '/fixture/:fixture_id' });
   this.route('soccerseason', {path: '/soccerseason/:soccerseason_id' });
+  this.route('leaguetable');
 });
 
 export default Router;

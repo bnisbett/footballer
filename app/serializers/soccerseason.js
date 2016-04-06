@@ -25,6 +25,11 @@ export default DS.JSONAPISerializer.extend({
             links: {
               related: `http://api.football-data.org/v1/soccerseasons/${payload.id}/fixtures`
             }
+          },
+          leagueTable: {
+            links: {
+              related: `http://api.football-data.org/v1/soccerseasons/${payload.id}/leagueTable`
+            }
           }
         }
       }
